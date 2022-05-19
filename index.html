@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1529fc7092.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pranjul Kushwaha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button onclick="toggle()" class="bt">
+        <!-- adding fontawesome icon -->
+        <i id="icon" class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <div class="sidebar" id="sidebar"></div>
+
+      <div class="box">
+        <div class="img"></div>
+        <h1>Pranjul Kushwaha</h1>
+        <p>A creative freelancer & Full stack developer</p>
+      </div>
+    </header>
+    <div class="container">
+      <div class="img"></div>
+      <div class="discover">
+        <h5>discover</h5>
+        <h3>About Me</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+          repudiandae illum itaque dolor libero molestias!
+        </p>
+        <div class="details">
+          <ul>
+            <li><span>Name:</span>Pranjul Kushwaha</li>
+            <li><span>Experience:</span>5 Years</li>
+            <li><span>Age:</span>21</li>
+          </ul>
+          <ul>
+            <li><span>freelance:</span>Available</li>
+            <li><span>Address:</span>India</li>
+            <li><span>Codepen:</span>/codepen</li>
+          </ul>
+        </div>
+        <button><a href="#">Download CV</a></button>
+      </div>
+    </div>
+    <section>
+      <div class="top">
+        <h5>What i do</h5>
+        <h3>My services</h3>
+      </div>
+      <div class="row">
+        <div class="cards">
+          <a href="">
+            <i class="fas fa-pencil-ruler"></i>
+          </a>
+          <h4>Cretive Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+        <div class="cards">
+          <a href="">
+            <i class="fa-solid fa-ranking-star"></i>
+          </a>
+          <h4>Branding</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+        <div class="cards">
+          <a href="">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </a>
+          <h4>User Interface</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+        <div class="cards">
+          <a href="">
+            <i class="fa-solid fa-umbrella"></i>
+          </a>
+          <h4>Development</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+        <div class="cards">
+          <a href="">
+            <i class="fa-solid fa-tablet-screen-button"></i>
+          </a>
+          <h4>Fully Responsive</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+        <div class="cards">
+          <a href="">
+            <i class="fa-regular fa-eye"></i>
+          </a>
+          <h4>Retina Ready</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde
+            sint consequuntur.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i> </a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </li>
+      </ul>
+      <p>&copy; Pranjulkushwaha.dev</p>
+    </footer>
+
+    <script>
+      var sbar = document.getElementById("sidebar");
+      var nav = document.getElementById("navbar");
+      var icon = document.getElementById("icon");
+
+      function toggle() {
+        if (icon.className === "fa-solid fa-bars-staggered") {
+          icon.className = "fa-solid fa-xmark";
+          sbar.innerHTML = nav.innerHTML;
+          sbar.style.display = "block";
+          console.log("if");
+        } else {
+          icon.className = "fa-solid fa-bars-staggered";
+          sbar.style.display = "none";
+          console.log("else");
+        }
+      }
+    </script>
+  </body>
+</html>
